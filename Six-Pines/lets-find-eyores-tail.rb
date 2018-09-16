@@ -1,8 +1,8 @@
 require 'pry'
-kanga_roo_address = '' # Your changes here!
-piglet_address = ''
-rabbit_address = ''
-pooh_address = ''
+kanga_roo_address = '../Kanga-And-Roos-House/kanga.txt' # Your changes here!
+piglet_address = 'Piglets-House/piglet.txt'
+rabbit_address = '../Rabbits-Meadow/Rabbits-House/rabbit.txt'
+pooh_address = '.Heffalump-Trap/Poohs-House/pooh-bear.txt'
 
 # Please do not change any code past this point!
 
@@ -36,12 +36,14 @@ who_was_asked.each do |person, address|
   i += 1
 end
 
+
 unless who_was_asked.values.uniq.length == ask_map.length
   puts('Hey rapscallion, it looks like you wrote down the same address twice!')
   return 0
 end
 
-if ask_map.all? true
+
+if ask_map.all? == true
 
   puts"                       . - ~ -.  .- .     .\n        ...:::::::::::.....    `- :  `.  ; `.   ..\n .;i!!!!!!!!!!!!!!!!!!!!!!!!!!i::.     `.`   `. : `\n"
   puts"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!;.   `     `;  ;\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!;:..    `  :_. - .\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!:.        ,~\n"
